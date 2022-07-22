@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/et_usernamereg"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColorHint="@color/grey"
+        android:layout_below="@+id/img_logo"/>
+
+    <EditText
+        android:id="@+id/et_mail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_usernamereg"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColorHint="@color/grey" />
+
+    <EditText
+        android:id="@+id/et_phno"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_mail"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textColorHint="@color/grey" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/et_pass"
+        android:background="#30ffffff"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="20dp"
+        android:layout_below="@+id/et_phno"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="Password"
+        android:padding="20dp"
+        android:textColorHint="@color/grey"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/et_reenterpass"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="Re-Enter Password"
+        android:layout_below="@+id/et_pass"
+        android:padding="20dp"
+        android:textColorHint="@color/grey"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_login"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Already registered? Sign in"
+        android:layout_below="@+id/et_reenterpass"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:layout_marginTop="25dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="18dp"
+        android:text="SIGNUP"
+        android:layout_below="@+id/tv_login"
+        android:textColor="@color/black"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

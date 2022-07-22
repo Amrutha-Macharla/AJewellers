@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1025955481713",
+    "project_id": "ajewellery-585ff",
+    "storage_bucket": "ajewellery-585ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025955481713:android:cf8cf0275bd663ad3ab3d0",
+        "android_client_info": {
+          "package_name": "com.example.ajewellery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025955481713-fhbbsveprvq20tcvhr0gf3cc5oj8t8vo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD3VFhsRRIBwjKBOTJyORQwW6vZ3DljWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025955481713-fhbbsveprvq20tcvhr0gf3cc5oj8t8vo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

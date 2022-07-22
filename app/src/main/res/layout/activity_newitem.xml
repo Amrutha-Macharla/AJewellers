@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewitemActivity"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:src="@drawable/logo" />
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:text="Select Your Item type"
+        android:textColor="@color/white" />
+
+    <RadioGroup
+        android:id="@+id/radio_gors"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_select"
+        android:layout_marginStart="70dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:id="@+id/rb_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="GOLD"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/rb_silver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:layout_marginStart="20dp"
+            android:text="SILVER"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_type"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/radio_gors"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#30ffffff"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="Item type (eg. necklace,ring,etc)"
+        android:padding="20dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/et_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#30ffffff"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="Weight of desired item (Approx.)"
+        android:padding="20dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_size"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/et_weight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#30ffffff"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="Size of desired item (in cm)"
+        android:padding="20dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_des"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/et_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#30ffffff"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="Additional information"
+        android:inputType="text|textMultiLine"
+        android:padding="20dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/et_phno"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/et_des"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#30ffffff"
+        android:fontFamily="@font/roboto_medium"
+        android:hint="Phone Number"
+        android:textSize="15dp"
+        android:inputType="phone"
+        android:padding="20dp"
+        android:textColor="@color/grey"
+        android:textColorHint="@color/grey" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_uploadimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_phno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/gold"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:text="Upload Image"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_uploadimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/gold"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+
+</RelativeLayout>
