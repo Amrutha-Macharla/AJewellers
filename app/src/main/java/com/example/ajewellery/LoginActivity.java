@@ -96,9 +96,6 @@ public class LoginActivity extends AppCompatActivity {
             Intent activity = new Intent(getApplicationContext(),IndexActivity.class);
             startActivity(activity);
         }
-        else {
-            startActivity(new Intent(this,LoginActivity.class));
-        }
     }
 
 //    @Override
